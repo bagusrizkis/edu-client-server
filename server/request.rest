@@ -1,0 +1,62 @@
+### GET /test
+POST http://localhost:3000/users/login-google
+Content-Type: application/json
+
+### Register
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "email": "udin@mail.com",
+  "password": "udinsedunia"
+}
+
+### Login
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "email": "udin@mail.com",
+  "password": "udinsedunia"
+}
+
+### List Movies
+GET http://localhost:3000/movies
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJ1ZGluQG1haWwuY29tIiwiaWF0IjoxNjM4MTg3MTAwfQ.mpWdF-BKnScGSqGtRvHkOTawf-Ixm2aVu_YUZ5hRXz4
+
+### List Popular
+GET http://localhost:3000/movies/popular
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJ1ZGluQG1haWwuY29tIiwiaWF0IjoxNjM4MTg3MTAwfQ.mpWdF-BKnScGSqGtRvHkOTawf-Ixm2aVu_YUZ5hRXz4
+
+
+### Post Movie
+POST http://localhost:3000/movies
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQHVzZXIuY29tIiwiaWF0IjoxNjM3ODI5NDA2fQ.NtdKNPIiPt7EvNor8mGc0R2JWVE3q9P4NZ-rJIoQ1eA
+
+{
+  "name": "The Dark Knight 2",
+  "image": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/826e20d747af639e2e2c3a95662283eabc6a6216a9bb74fc45cb1c29f2708b96._RI_V_TTW_.jpg"
+}
+
+### Get Movie
+GET http://localhost:3000/movies
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQHVzZXIuY29tIiwiaWF0IjoxNjM3ODI5NDA2fQ.NtdKNPIiPt7EvNor8mGc0R2JWVE3q9P4NZ-rJIoQ1eA
+
+### Put Movie
+PUT http://localhost:3000/movies/3
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQHVzZXIuY29tIiwiaWF0IjoxNjM3ODI5NDA2fQ.NtdKNPIiPt7EvNor8mGc0R2JWVE3q9P4NZ-rJIoQ1eA
+
+{
+  "name": "The Texas Chainsaw Massacre",
+  "image": "https://m.media-amazon.com/images/M/MV5BZDg2NDJkOGYtMjM3My00Mzc2LWJiYjktODFlMzBjNmQwMTEyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+}
+
+### Delete Movie
+DELETE http://localhost:3000/movies/5
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQHVzZXIuY29tIiwiaWF0IjoxNjM3ODI5NDA2fQ.NtdKNPIiPt7EvNor8mGc0R2JWVE3q9P4NZ-rJIoQ1eA
